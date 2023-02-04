@@ -14,12 +14,17 @@
             <span id="birth-date">12 / 02 / 2005</span>
             <hr>
 
-            <section class="card">
+            <section id="contact" class="card">
                 <span class="card-title">Contacto</span>
 
                 <div id="mail">
                     <span>Correo electrónico:</span>
                     <a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a>
+                </div>
+
+                <div id="phone">
+                    <span>Número de teléfono (Móvil):</span>
+                    <a href="tel:601463236">601 46 32 36</a>
                 </div>
 
             </section>
@@ -34,10 +39,10 @@
             
             <div id="main-data">
 
-                <section class="card">
+                <section id="about-me" class="card">
                     <span class="card-title">Sobre mi</span>
 
-                    <div id="about-me">
+                    <div>
                         <p>
                             Soy Jorge Pulido, el tío más guapo del mundo entero y el más listo también
                         </p>
@@ -45,15 +50,15 @@
 
                 </section>
 
-                <section class="card">
+                <section id="studies" class="card">
                     <span class="card-title">Formación académica</span>
 
-                    <div id="studies">
+                    <div>
                     
-                        <section class="card">
+                        <section id="smr" class="card secondary-card">
                             <span class="card-title">Sistemas Microinformáticos y Redes (Cursando)</span>
                         
-                            <div id="smr">
+                            <div>
                                 <span class="date">(00 / 00 / 0000 - actualidad)</span>
                                 <p>
                                     Grado medio en sistemas microinformáticos y redes en el instituto IFP
@@ -62,10 +67,10 @@
                         
                         </section>
                     
-                        <section class="card">
+                        <section id="eso" class="card secondary-card">
                             <span class="card-title">ESO</span>
                         
-                            <div id="eso">
+                            <div>
                                 <span class="date">(00 / 00 / 0000 - 00 / 00 / 0000)</span>
                                 <p>
                                     Educación secundaria obligatoria en el instituto Sagrados Corazones
@@ -78,12 +83,12 @@
 
                 </section>
 
-                <section class="card">
+                <section id="other-studies" class="card">
                     <span class="card-title">Otra formación</span>
 
-                    <div id="studies">
+                    <div>
                     
-                        <section class="card">
+                        <section class="card secondary-card">
                             <span class="card-title">Kenbudo (Arte marcial)</span>
                         
                             <div id="kenbudo">
@@ -101,10 +106,10 @@
 
                 <div id="more-info">
 
-                    <section class="card">
+                    <section id="skills" class="card">
                         <span class="card-title">Habilidades</span>
                     
-                        <div id="skills">
+                        <div>
                             <ul>
                                 <li>Soy muy listo</li>
                                 <li>Soy muy guapo</li>
@@ -113,10 +118,10 @@
                     
                     </section>
 
-                    <section class="card">
+                    <section id="languages" class="card">
                         <span class="card-title">Idiomas</span>
                     
-                        <div id="languages">
+                        <div>
                             <ul>
                                 <li>Español: Nativo</li>
                                 <li>Inglés: Nivel medio</li>
@@ -131,12 +136,17 @@
 
             <div id="movile-profile">
 
-                <section class="card">
+                <section id="contact" class="card">
                     <span class="card-title">Contacto</span>
     
                     <div id="mail">
                         <span>Correo electrónico:</span>
                         <a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a>
+                    </div>
+    
+                    <div id="phone">
+                        <span>Número de teléfono (Móvil):</span>
+                        <a href="tel:601463236">601 46 32 36</a>
                     </div>
     
                 </section>
@@ -146,6 +156,8 @@
         </main>
     </div>
     <style>
+
+        /* Root variables */
         :root{
             --main-color: #e0e0e0;
             --main-box-shadow: 9.91px 9.91px 15px #bebebe, -9.91px -9.91px 15px #ffffff;
@@ -159,70 +171,85 @@
         }
 
 
-
+        /* General styles */
         *{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
 
 
-        ::-webkit-scrollbar {width: 20px;}
-        ::-webkit-scrollbar-track {
-            height: 90%;
-            background-color: transparent;
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 20px;
         }
+        ::-webkit-scrollbar-track {background-color: transparent;}
         ::-webkit-scrollbar-thumb {
             background-color: #c2c0c0;
             border-radius: 20px;
             border: 6px solid transparent;
             background-clip: content-box;
+            /* border-left: 5px solid #c2c0c0; */
         }
         ::-webkit-scrollbar-thumb:hover {background-color: #858484;}
         ::-webkit-scrollbar-thumb:active {background-color: #4e4e4e;}
+        ::-webkit-scrollbar-button{height: 6px;}
 
 
 
+        /* Text */
+        p, h1, h2, span, li{
+            color: var(--text-color);
+            text-shadow: var(--text-shadow);
+            font-size: 18px;
+        }
         h1, h2{
             text-align: center;
             margin: 20px 0 4px 0px;
+            font-weight: 900;
+            font-size: 32px;
         }
-        h2{margin: 4px;}
-        p, h1, h2, span{
-            color: var(--text-color);
-            text-shadow: var(--text-shadow);
+        h2{
+            margin: 8px 0 0 0;
+            font-size: 26px;
         }
 
 
 
+        /* Body */
         body{background-color: var(--main-color);}
 
 
 
+        /* Main container */
         #main-container{
             position: relative;
             transform: translate(-50%, -50%);
             top: 50vh;
             left: 50vw;
+
             display: flex;
             flex-direction: row;
-            border-radius: 30px;
+
             background: var(--main-color);
             box-shadow: var(--main-box-shadow);
+
             overflow-y: auto;
             overflow-x: hidden;
+
+            max-width: 1800px;
+            
             width: 95vw;
             height: 95vh;
 
-            /* max-width: 1500px; */
-            
-            width: 100vw;
-            height: 100vh;
+            border-radius: 30px;
         }
 
 
 
+        /* Main */
         main{
             flex-basis: 75%;
             display: flex;
@@ -241,6 +268,7 @@
 
 
 
+        /* Profile */
         #profile{
             flex-basis: 25%;
             min-width: 265px;
@@ -260,7 +288,6 @@
         #movile-profile{
             text-align: center;
             display: none;
-            display: none;
         }
         #movile-profile > span{
             display: block;
@@ -275,6 +302,7 @@
 
 
 
+        /* Cards */
         .card{
             margin: 6%;
             padding: 4%;
@@ -287,7 +315,8 @@
         .card-title{
             display: block;
             text-align: center;
-            font-size: 22px;
+            font-size: 23px;
+            font-weight: 700;
         }
 
         .card > div{
@@ -300,7 +329,7 @@
             margin: 0 15px;
         }
         
-        #studies .card{
+        .secondary-card{
             margin: 10px;
             box-shadow: var(--secondary-box-shadow);
         }
@@ -315,6 +344,7 @@
 
 
 
+        /* Movile display styles */
         @media (max-width: 750px) {
             #movile-profile{
                 display: block;
@@ -329,6 +359,11 @@
                 flex-basis: 100%;
             }
         }
+
+        
+
+        /* To print to PDF */
+        /* p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width:100vw;height:100vh;}@media (max-width: 750px) {#movile-profile{display: none;}#profile{display: block;}#movile-profile{display: none;}main{flex-basis: 75%;}} */
 
     </style>
 </body>
