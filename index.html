@@ -202,7 +202,7 @@
         /* Text */
         p, h1, h2, span, li{
             color: var(--text-color);
-            text-shadow: var(--text-shadow);
+            /* text-shadow: var(--text-shadow); */
             font-size: 18px;
         }
         h1, h2{
@@ -212,7 +212,7 @@
             font-size: 32px;
         }
         h2{
-            margin: 8px 0 0 0;
+            margin: 8px 6px 0 6px;
             font-size: 26px;
         }
 
@@ -271,7 +271,7 @@
         /* Profile */
         #profile{
             flex-basis: 25%;
-            min-width: 265px;
+            min-width: 285px;
             max-width: 300px;
         }
         #profile #birth-date{
@@ -363,7 +363,7 @@
         
 
         /* To print to PDF */
-        /* p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width:100vw;height:100vh;}@media (max-width: 750px) {#movile-profile{display: none;}#profile{display: block;}#movile-profile{display: none;}main{flex-basis: 75%;}} */
+        body::-webkit-scrollbar{width: 0;}p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width: 100vw;height: auto;overflow: hidden;transform: translate(0, 0);top: 0;left: 0;}@media (max-width: 750px) {#movile-profile{display: none;}#profile{display: block;}#movile-profile{display: none;}main{flex-basis: 75%;}}
 
     </style>
 </body>
