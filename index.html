@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Jorge Pulido</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="profile">
+            <img class="profile-image" src="https://via.placeholder.com/300.png/09f/fff" alt="">
+            
+            <span id="birth-date">12 / 02 / 2005</span>
+            <hr>
+
+            <section class="card">
+                <span class="card-title">Contacto</span>
+
+                <div id="mail">
+                    <span>Correo electrónico:</span>
+                    <a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a>
+                </div>
+
+            </section>
+        </div>
+        <main>
+            <h1>Jorge Pulido</h1>
+            <div id="movile-profile">
+                <img class="profile-image movile-profile-image" src="https://via.placeholder.com/300.png/09f/fff" alt="">
+                <span id="birth-date">12 / 02 / 2005</span>
+            </div>
+            <h2>Técnico en sistemas microinformáticos y redes</h2>
+            
+            <div id="main-data">
+
+                <section class="card">
+                    <span class="card-title">Sobre mi</span>
+
+                    <div id="about-me">
+                        <p>
+                            Soy Jorge Pulido, el tío más guapo del mundo entero y el más listo también
+                        </p>
+                    </div>
+
+                </section>
+
+                <section class="card">
+                    <span class="card-title">Formación académica</span>
+
+                    <div id="studies">
+                    
+                        <section class="card">
+                            <span class="card-title">Sistemas Microinformáticos y Redes (Cursando)</span>
+                        
+                            <div id="smr">
+                                <span class="date">(00 / 00 / 0000 - actualidad)</span>
+                                <p>
+                                    Grado medio en sistemas microinformáticos y redes en el instituto IFP
+                                </p>
+                            </div>
+                        
+                        </section>
+                    
+                        <section class="card">
+                            <span class="card-title">ESO</span>
+                        
+                            <div id="eso">
+                                <span class="date">(00 / 00 / 0000 - 00 / 00 / 0000)</span>
+                                <p>
+                                    Educación secundaria obligatoria en el instituto Sagrados Corazones
+                                </p>
+                            </div>
+                        
+                        </section>
+
+                    </div>
+
+                </section>
+
+                <section class="card">
+                    <span class="card-title">Otra formación</span>
+
+                    <div id="studies">
+                    
+                        <section class="card">
+                            <span class="card-title">Kenbudo (Arte marcial)</span>
+                        
+                            <div id="kenbudo">
+                                <span class="date">(00 / 00 / 0000 - 00 / 00 / 0000)</span>
+                                <p>
+                                    Arte marcial basada en la esgrima japonesa.
+                                </p>
+                            </div>
+                        
+                        </section>
+
+                    </div>
+
+                </section>
+
+                <div id="more-info">
+
+                    <section class="card">
+                        <span class="card-title">Habilidades</span>
+                    
+                        <div id="skills">
+                            <ul>
+                                <li>Soy muy listo</li>
+                                <li>Soy muy guapo</li>
+                            </ul>
+                        </div>
+                    
+                    </section>
+
+                    <section class="card">
+                        <span class="card-title">Idiomas</span>
+                    
+                        <div id="languages">
+                            <ul>
+                                <li>Español: Nativo</li>
+                                <li>Inglés: Nivel medio</li>
+                            </ul>
+                        </div>
+                    
+                    </section>
+
+                </div>
+                
+            </div>
+
+            <div id="movile-profile">
+
+                <section class="card">
+                    <span class="card-title">Contacto</span>
+    
+                    <div id="mail">
+                        <span>Correo electrónico:</span>
+                        <a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a>
+                    </div>
+    
+                </section>
+            
+            </div>
+
+        </main>
+    </div>
+    <style>
+        :root{
+            --main-color: #e0e0e0;
+            --main-box-shadow: 9.91px 9.91px 15px #bebebe, -9.91px -9.91px 15px #ffffff;
+
+            --secondary-box-shadow: inset 9.91px 9.91px 15px #bebebe, inset -9.91px -9.91px 15px #ffffff;
+
+            --text-color: #464545;
+            --text-shadow: 0 0 12px #7a7a7a;
+            
+            --separator-color: #3b3b3b;
+        }
+
+
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        ::-webkit-scrollbar {width: 20px;}
+        ::-webkit-scrollbar-track {
+            height: 90%;
+            background-color: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #c2c0c0;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+        }
+        ::-webkit-scrollbar-thumb:hover {background-color: #858484;}
+        ::-webkit-scrollbar-thumb:active {background-color: #4e4e4e;}
+
+
+
+        h1, h2{
+            text-align: center;
+            margin: 20px 0 4px 0px;
+        }
+        h2{margin: 4px;}
+        p, h1, h2, span{
+            color: var(--text-color);
+            text-shadow: var(--text-shadow);
+        }
+
+
+
+        body{background-color: var(--main-color);}
+
+
+
+        #main-container{
+            position: relative;
+            transform: translate(-50%, -50%);
+            top: 50vh;
+            left: 50vw;
+            display: flex;
+            flex-direction: row;
+            border-radius: 30px;
+            background: var(--main-color);
+            box-shadow: var(--main-box-shadow);
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-width: 1500px;
+            width: 95vw;
+            
+            /* height: 95vh; */
+        }
+
+
+
+        main{
+            flex-basis: 75%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        #main-data{
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-image{
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+
+        #profile{
+            flex-basis: 25%;
+            min-width: 265px;
+            max-width: 300px;
+        }
+        #profile #birth-date{
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+        }
+        #profile hr{
+            margin: 5px 8px 20px 8px;
+            border-color: var(--separator-color);
+        }
+
+
+        #movile-profile{
+            text-align: center;
+            display: none;
+            display: none;
+        }
+        #movile-profile > span{
+            display: block;
+            margin: 0 0 10px 0;
+        }
+
+        .movile-profile-image{
+            max-width: 300px;
+            margin: 4%;
+            border-radius: 100%;
+        }
+
+
+
+        .card{
+            margin: 6%;
+            padding: 4%;
+            border-radius: 10px;
+            background: var(--main-color);
+            box-shadow: var(--main-box-shadow);
+            overflow: hidden;
+        }
+        
+        .card-title{
+            display: block;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .card > div{
+            margin: 20px 0 0 0;
+        }
+        .card > div > .date{
+            font-size: 14px;
+        }
+        .card > div > ul{
+            margin: 0 15px;
+        }
+        
+        #studies .card{
+            margin: 10px;
+            box-shadow: var(--secondary-box-shadow);
+        }
+        
+        #more-info{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #more-info .card{
+            margin: 0 12% 25px 12%;
+        }
+
+
+
+        @media (max-width: 750px) {
+            #movile-profile{
+                display: block;
+            }
+            #profile{
+                display: none;
+            }
+            #movile-profile{
+                display: block;
+            }
+            main{
+                flex-basis: 100%;
+            }
+        }
+
+    </style>
+</body>
+</html>
