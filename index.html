@@ -8,6 +8,10 @@
 </head>
 <body>
     <div id="main-container">
+
+
+
+
         <div id="profile">
             <!-- <img class="profile-image" src="./jorge.png" alt=""> -->
             <img class="profile-image" src="./jorge2.jpeg" alt="">
@@ -15,7 +19,7 @@
             <span id="birth-date">12 / 02 / 2005</span>
             <hr>
 
-            <section id="contact" class="card">
+            <section class="card contact">
                 <span class="card-title">Contacto</span>
 
                 <div id="mail">
@@ -33,7 +37,41 @@
                 </div>
 
             </section>
+
+            <section class="card skills">
+                <span class="card-title">Habilidades</span>
+            
+                <div>
+                    <ul>
+                        <li><a href="#development-knowledge">Desarroyo web y app</a></li>
+                        <li><a href="#music-production-knowledge">Producción musical</a></li>
+                        <li><a href="#ofimatic-knowledge">Ofimática</a></li>
+                        <br>
+                        <li>Capacidad de liderazgo</li>
+                        <li>Pensamiento crítico / lógico</li>
+                    </ul>
+                </div>
+            
+            </section>
+
+            <section class="card languages">
+                <span class="card-title">Idiomas</span>
+            
+                <div>
+                    <ul>
+                        <li>Español: Nativo</li>
+                        <li>Inglés: Nivel medio</li>
+                    </ul>
+                </div>
+            
+            </section>
         </div>
+
+
+
+
+
+
         <main>
             <h1>Jorge Pulido</h1>
             <div class="movile-profile">
@@ -52,6 +90,10 @@
                         <p>
                             Soy Jorge Pulido, el tío más guapo del mundo entero y el más listo también
                         </p>
+                        <div class="noprint" id="download-print">
+                            <button onclick="window.print()">Imprimir curriculum</button>
+                            <a href="./Curriculum Jorge Pulido.pdf" download>Descargar curriculum (PDF)</a>
+                        </div>
                     </div>
 
                 </section>
@@ -110,21 +152,154 @@
 
                 </section>
 
+                <div class="new-page"></div>
+
+                <section id="development-knowledge" class="card">
+                    <span class="card-title">Desarroyo web y de aplicación</span>
+
+                    <div>
+                    
+                        <section id="programming-languages" class="card secondary-card progress-list">
+                            <span class="card-title">Lenguajes</span>
+                        
+                            <ul>
+                                <li>
+                                    <span>JavaScript</span>
+                                    <progress max="100" value="80"></progress>
+                                </li>
+                                <li>
+                                    <span>HTML</span>
+                                    <progress max="100" value="92"></progress>
+                                </li>
+                                <li>
+                                    <span>CSS</span>
+                                    <progress max="100" value="88"></progress>
+                                </li>
+                                <li>
+                                    <span>Python</span>
+                                    <progress max="100" value="35"></progress>
+                                </li>
+                                <li>
+                                    <span>PHP</span>
+                                    <progress max="100" value="52"></progress>
+                                </li>
+                                <li>
+                                    <span>Java</span>
+                                    <progress max="100" value="12"></progress>
+                                </li>
+                            </ul>
+                        
+                        </section>
+                    
+                        <section id="eso" class="card secondary-card">
+                            <span class="card-title">Frameworks</span>
+                        
+                            <ul>
+                                <li>
+                                    <span>React</span>
+                                    <progress max="100" value="68"></progress>
+                                </li>
+                                <li>
+                                    <span>Electron</span>
+                                    <progress max="100" value="65"></progress>
+                                </li>
+                            </ul>
+                        
+                        </section>
+                    
+                        <section id="eso" class="card secondary-card">
+                            <span class="card-title">Tecnologías</span>
+                        
+                            <ul>
+                                <li>
+                                    <span>Node JS</span>
+                                    <progress max="100" value="62"></progress>
+                                </li>
+                                <li>
+                                    <span>NPM</span>
+                                    <progress max="100" value="80"></progress>
+                                </li>
+                                <li>
+                                    <span>WebPack</span>
+                                    <progress max="100" value="63"></progress>
+                                </li>
+                                <li>
+                                    <span>GIT y GitHub</span>
+                                    <progress max="100" value="80"></progress>
+                                </li>
+                            </ul>
+                        
+                        </section>
+
+                    </div>
+
+                </section>
+
+                <section id="music-production-knowledge" class="card">
+                    <span class="card-title">Producción musical</span>
+
+                    <div>
+                    
+                        <section id="DAW" class="card secondary-card progress-list">
+                            <span class="card-title">DAW</span>
+                        
+                            <ul>
+                                <li>
+                                    <span>FL Studio</span>
+                                    <progress max="100" value="80"></progress>
+                                </li>
+                            </ul>
+                        
+                        </section>
+
+                    </div>
+
+                </section>
+
+                <section id="ofimatic-knowledge" class="card">
+                    <span class="card-title">Ofimática</span>
+
+                    <div>
+                    
+                        <section id="office-packages" class="card secondary-card progress-list">
+                            <span class="card-title">Paquetes de ofimática</span>
+                        
+                            <ul>
+                                <li>
+                                    <span>Microsoft Office</span>
+                                    <progress max="100" value="65"></progress>
+                                </li>
+                                <li>
+                                    <span>Open / Libre Office</span>
+                                    <progress max="100" value="45"></progress>
+                                </li>
+                            </ul>
+                        
+                        </section>
+
+                    </div>
+
+                </section>
+
                 <div id="more-info">
 
-                    <section id="skills" class="card">
+                    <section class="card skills movile-display">
                         <span class="card-title">Habilidades</span>
                     
                         <div>
                             <ul>
-                                <li>Soy muy listo</li>
-                                <li>Soy muy guapo</li>
+                                <li><a href="#development-knowledge">Desarroyo web y app</a></li>
+                                <li><a href="#music-production-knowledge">Producción musical</a></li>
+                                <li><a href="#ofimatic-knowledge">Ofimática</a></li>
+                                <br>
+                                <li>Capacidad de liderazgo</li>
+                                <li>Pensamiento crítico / lógico</li>
                             </ul>
                         </div>
                     
                     </section>
 
-                    <section id="languages" class="card">
+                    <section class="languages card movile-display">
                         <span class="card-title">Idiomas</span>
                     
                         <div>
@@ -136,13 +311,15 @@
                     
                     </section>
 
+                    
                 </div>
                 
             </div>
 
-            <div class="movile-profile">
+            
+            <div class="movile-display">
 
-                <section id="contact" class="card">
+                <section class="contact card movile-display">
                     <span class="card-title">Contacto</span>
     
                     <div id="mail">
@@ -166,6 +343,10 @@
         </main>
     </div>
     <style>
+        @page{
+            size: A4 portrait;
+            margin: 10mm;
+        }
 
         /* Root variables */
         :root{
@@ -180,13 +361,14 @@
             --separator-color: #3b3b3b;
         }
 
-
         /* General styles */
         *{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
+            float: none;
+            scroll-behavior: smooth;
         }
 
 
@@ -215,7 +397,7 @@
             /* text-shadow: var(--text-shadow); */
             font-size: 18px;
         }
-        p > a{font-size: 16px;}
+        p > a, ul li{font-size: 16px;}
         h1, h2{
             text-align: center;
             margin: 20px 6% 4px 6%;
@@ -282,7 +464,6 @@
             min-width: 285px;
             max-width: 300px;
             transition: flex-basis .3s, min-width .3s;
-            overflow: hidden;
         }
         #profile #birth-date{
             display: block;
@@ -307,6 +488,7 @@
             text-align: center;
             opacity: 0%;
             height: 0%;
+            margin: 0;
             transition: opacity .3s, height .5s;
         }
         .movile-profile > span{
@@ -336,6 +518,7 @@
             box-shadow: var(--main-box-shadow);
             overflow: hidden;
         }
+
         
         .card-title{
             display: block;
@@ -364,13 +547,43 @@
             grid-template-columns: 1fr 1fr;
         }
         #more-info .card{
-            margin: 0 12% 25px 12%;
+            margin: 0 12% 0 12%;
+        }
+
+
+        .movile-display{
+            display: none;
+        }
+
+
+
+        #download-print{
+            text-align: center;
+        }
+        #download-print button, #download-print a{
+            display: inline-block;
+            background: #e0e0e0;
+            box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+            border-radius: 20px;
+            border: 0;
+            color: var(--text-color);
+            font-size: 18px;
+            padding: 15px;
+            margin: 15px 10px 0 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        #download-print button:hover, #download-print a:hover{
+            background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        }
+        #download-print button:active, #download-print a:active{
+            background: linear-gradient(145deg, #cacaca, #f0f0f0);
         }
 
 
 
         /* Movile display styles */
-        @media (max-width: 750px) {
+        @media (max-width: 760px) {
             .movile-profile{
                 opacity: 100%;
                 height: 100%;
@@ -380,6 +593,7 @@
                 width: 100%;
             }
             #profile{
+                overflow: hidden;
                 white-space: nowrap;
                 min-width: 0px;
                 flex-basis: 0%;
@@ -387,15 +601,55 @@
             main{
                 flex-basis: 100%;
             }
-        }
-
-        br{
-            display: none;
+            .movile-display{
+                display: block;
+            }
         }
         
 
         /* To print to PDF */
-        /* body::-webkit-scrollbar{width: 0;}p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width: 100vw;height: auto;overflow: hidden;transform: translate(0, 0);top: 0;left: 0;}@media (max-width: 750px) {.movile-profile{display: none;}#profile{white-space:normal;min-width:285px;flex-basis: 25%;}main{flex-basis: 75%;}}br{display: unset} */
+        @media print{
+            body::-webkit-scrollbar{
+                width: 0;
+            }
+            p,h1,h2,span{
+                text-shadow: none;
+            }
+            #main-container{
+                border-radius: 0;
+                max-width: none;
+                width: 21cm;
+                height: 100%;
+                overflow: hidden;
+                transform: translate(0, 0);
+                top: 0;
+                left: 0;
+            }
+            @media (max-width: 750px) {
+                .movile-profile{
+                    display: none;
+                }
+                #profile{
+                    white-space: normal;
+                    min-width: 285px;
+                    flex-basis: 25%;
+                }
+                main{
+                    flex-basis: 75%;
+                }
+            }
+            .movile-display{
+                display: none;
+            }
+            .new-page{
+                background-color: red;
+                page-break-before: always;
+            }
+            .noprint{
+                display: none;
+            }
+        }
+        /* body::-webkit-scrollbar{width: 0;}p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width: 21cm;height: 100%;overflow: hidden;transform: translate(0, 0);top: 0;left: 0;}@media (max-width: 750px) {.movile-profile{display: none;}#profile{white-space:normal;min-width:285px;flex-basis: 25%;}main{flex-basis: 75%;}}br{display: unset} */
 
     </style>
 </body>
