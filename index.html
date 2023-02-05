@@ -79,7 +79,7 @@
                 <img class="profile-image movile-profile-image" src="./jorge2.jpeg" alt="">
                 <span id="birth-date">12 / 02 / 2005</span>
             </div>
-            <h2>Técnico en sistemas microinformáticos y redes</h2>
+            <!-- <h2>Técnico en sistemas microinformáticos y redes</h2> -->
             
             <div id="main-data">
 
@@ -234,7 +234,7 @@
                     </div>
 
                 </section>
-
+<!-- 
                 <section id="music-production-knowledge" class="card">
                     <span class="card-title">Producción musical</span>
 
@@ -279,9 +279,37 @@
 
                     </div>
 
-                </section>
+                </section> -->
 
                 <div id="more-info">
+    
+                    <section style="margin-bottom: 8%;" id="ofimatic-knowledge" class="card">
+                        <span style="margin-bottom: 10px;" class="card-title">Ofimática</span>
+                        
+                        <ul>
+                            <li>
+                                <span>Microsoft Office</span>
+                                <progress max="100" value="65"></progress>
+                            </li>
+                            <li>
+                                <span>Open / Libre Office</span>
+                                <progress max="100" value="45"></progress>
+                            </li>
+                        </ul>
+    
+                    </section>
+
+                    <section style="margin-bottom: 8%;" id="music-production-knowledge" class="card">
+                        <span style="margin-bottom: 10px;" class="card-title">Producción musical</span>
+                            
+                        <ul>
+                            <li>
+                                <span>FL Studio</span>
+                                <progress max="100" value="80"></progress>
+                            </li>
+                        </ul>
+    
+                    </section>
 
                     <section class="card skills movile-display">
                         <span class="card-title">Habilidades</span>
@@ -395,17 +423,23 @@
         p, h1, h2, span, li{
             color: var(--text-color);
             /* text-shadow: var(--text-shadow); */
-            font-size: 18px;
+            font-size: 16px;
         }
-        p > a, ul li{font-size: 16px;}
+        p > a, ul li{font-size: 14px;}
+        ul{
+            list-style: none;
+        }
+        .skills ul, .languages ul{
+            list-style: circle;
+        }
         h1, h2{
             text-align: center;
-            margin: 20px 6% 4px 6%;
+            margin: 20px 6% 0 6%;
             font-weight: 900;
             font-size: 32px;
         }
         h2{
-            margin: 8px 6% 0 6%;
+            margin: 4px 6% 2px 6%;
             font-size: 26px;
         }
 
@@ -511,8 +545,8 @@
 
         /* Cards */
         .card{
-            margin: 6%;
-            padding: 4%;
+            margin: 4%;
+            padding: 3%;
             border-radius: 10px;
             background: var(--main-color);
             box-shadow: var(--main-box-shadow);
@@ -523,8 +557,11 @@
         .card-title{
             display: block;
             text-align: center;
-            font-size: 23px;
+            font-size: 20px;
             font-weight: 700;
+        }
+        #about-me .card-title{
+            font-size: 24px;
         }
 
         .card > div{
@@ -547,7 +584,7 @@
             grid-template-columns: 1fr 1fr;
         }
         #more-info .card{
-            margin: 0 12% 0 12%;
+            margin: 0 8% 0 8%;
         }
 
 
