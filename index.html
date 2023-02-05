@@ -9,7 +9,8 @@
 <body>
     <div id="main-container">
         <div id="profile">
-            <img class="profile-image" src="https://via.placeholder.com/300.png/09f/fff" alt="">
+            <!-- <img class="profile-image" src="./jorge.png" alt=""> -->
+            <img class="profile-image" src="./jorge2.jpeg" alt="">
             
             <span id="birth-date">12 / 02 / 2005</span>
             <hr>
@@ -18,21 +19,26 @@
                 <span class="card-title">Contacto</span>
 
                 <div id="mail">
+
                     <span>Correo electrónico:</span>
-                    <a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a>
+                    <p><a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a></p>
+                    
                 </div>
 
                 <div id="phone">
+
                     <span>Número de teléfono (Móvil):</span>
-                    <a href="tel:601463236">601 46 32 36</a>
+                    <p><a href="tel:601463236">601 46 32 36</a></p>
+                    
                 </div>
 
             </section>
         </div>
         <main>
             <h1>Jorge Pulido</h1>
-            <div id="movile-profile">
-                <img class="profile-image movile-profile-image" src="https://via.placeholder.com/300.png/09f/fff" alt="">
+            <div class="movile-profile">
+                <!-- <img class="profile-image movile-profile-image" src="./jorge.png" alt=""> -->
+                <img class="profile-image movile-profile-image" src="./jorge2.jpeg" alt="">
                 <span id="birth-date">12 / 02 / 2005</span>
             </div>
             <h2>Técnico en sistemas microinformáticos y redes</h2>
@@ -134,19 +140,23 @@
                 
             </div>
 
-            <div id="movile-profile">
+            <div class="movile-profile">
 
                 <section id="contact" class="card">
                     <span class="card-title">Contacto</span>
     
                     <div id="mail">
+
                         <span>Correo electrónico:</span>
-                        <a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a>
+                        <p><a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a></p>
+                   
                     </div>
     
                     <div id="phone">
+
                         <span>Número de teléfono (Móvil):</span>
-                        <a href="tel:601463236">601 46 32 36</a>
+                        <p><a href="tel:601463236">601 46 32 36</a></p>
+                    
                     </div>
     
                 </section>
@@ -205,14 +215,15 @@
             /* text-shadow: var(--text-shadow); */
             font-size: 18px;
         }
+        p > a{font-size: 16px;}
         h1, h2{
             text-align: center;
-            margin: 20px 0 4px 0px;
+            margin: 20px 6% 4px 6%;
             font-weight: 900;
             font-size: 32px;
         }
         h2{
-            margin: 8px 6px 0 6px;
+            margin: 8px 6% 0 6%;
             font-size: 26px;
         }
 
@@ -255,15 +266,12 @@
             display: flex;
             flex-direction: column;
             margin: 0;
+            transition: flex-basis .3s;
         }
 
         #main-data{
             align-items: center;
             justify-content: center;
-        }
-        .profile-image{
-            object-fit: cover;
-            width: 100%;
         }
 
 
@@ -273,6 +281,8 @@
             flex-basis: 25%;
             min-width: 285px;
             max-width: 300px;
+            transition: flex-basis .3s, min-width .3s;
+            overflow: hidden;
         }
         #profile #birth-date{
             display: block;
@@ -285,19 +295,34 @@
         }
 
 
-        #movile-profile{
-            text-align: center;
-            display: none;
+        .profile-image{
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+            box-shadow: var(--secondary-box-shadow);
         }
-        #movile-profile > span{
+
+
+        .movile-profile{
+            text-align: center;
+            opacity: 0%;
+            height: 0%;
+            transition: opacity .3s, height .5s;
+        }
+        .movile-profile > span{
             display: block;
             margin: 0 0 10px 0;
         }
 
         .movile-profile-image{
             max-width: 300px;
-            margin: 4%;
+            max-height: 300px;
+            height: 100%;
+            width: 0%;
+            margin: 6%;
+            opacity: 0%;
             border-radius: 100%;
+            transition: opacity .8s, height .8s, width 1.2s;
         }
 
 
@@ -346,24 +371,31 @@
 
         /* Movile display styles */
         @media (max-width: 750px) {
-            #movile-profile{
-                display: block;
+            .movile-profile{
+                opacity: 100%;
+                height: 100%;
+            }
+            .movile-profile-image{
+                opacity: 1;
+                width: 100%;
             }
             #profile{
-                display: none;
-            }
-            #movile-profile{
-                display: block;
+                white-space: nowrap;
+                min-width: 0px;
+                flex-basis: 0%;
             }
             main{
                 flex-basis: 100%;
             }
         }
 
+        br{
+            display: none;
+        }
         
 
         /* To print to PDF */
-        /* body::-webkit-scrollbar{width: 0;}p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width: 100vw;height: auto;overflow: hidden;transform: translate(0, 0);top: 0;left: 0;}@media (max-width: 750px) {#movile-profile{display: none;}#profile{display: block;}#movile-profile{display: none;}main{flex-basis: 75%;}} */
+        /* body::-webkit-scrollbar{width: 0;}p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width: 100vw;height: auto;overflow: hidden;transform: translate(0, 0);top: 0;left: 0;}@media (max-width: 750px) {.movile-profile{display: none;}#profile{white-space:normal;min-width:285px;flex-basis: 25%;}main{flex-basis: 75%;}}br{display: unset} */
 
     </style>
 </body>
