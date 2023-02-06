@@ -17,7 +17,7 @@
             <img class="profile-image" src="./jorge2.jpeg" alt="">
             
             <span id="birth-date">12 / 02 / 2005</span>
-            <hr>
+            <!-- <hr> -->
 
             <section class="card contact">
                 <span class="card-title">Contacto</span>
@@ -25,7 +25,7 @@
                 <div id="mail">
 
                     <span>Correo electrónico:</span>
-                    <p><a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a></p>
+                    <p><a href="mailto:work.jorge.pulido@gmail.com">work.jorge.pulido@gmail.com</a></p>
                     
                 </div>
 
@@ -43,7 +43,7 @@
             
                 <div>
                     <ul>
-                        <li><a href="#development-knowledge">Desarroyo web y app</a></li>
+                        <li><a href="#development-knowledge">Desarrollo web y app</a></li>
                         <li><a href="#music-production-knowledge">Producción musical</a></li>
                         <li><a href="#ofimatic-knowledge">Ofimática</a></li>
                         <br>
@@ -88,7 +88,9 @@
 
                     <div>
                         <p>
-                            Soy Jorge Pulido, el tío más guapo del mundo entero y el más listo también
+                            Soy Jorge Pulido, estudiante de sistemas microinformáticos y redes. Desde pequeño he sido un gran apasionado de la informática y del desarroyo tecnológico y me encanta aprender cosas nuevas.
+                            <br>
+                            Me gusta el deporte, por ejemplo, ir en bici, las artes marciales, o simplemente caminar y disfrutar del aire libre. También me gusta ver películas y series o programar.
                         </p>
                         <div class="noprint" id="download-print">
                             <button onclick="window.print()">Imprimir curriculum</button>
@@ -152,10 +154,10 @@
 
                 </section>
 
-                <div class="new-page"></div>
+                <!-- <div class="new-page"></div> -->
 
                 <section id="development-knowledge" class="card">
-                    <span class="card-title">Desarroyo web y de aplicación</span>
+                    <span class="card-title">Desarrollo web y de aplicación</span>
 
                     <div>
                     
@@ -163,10 +165,6 @@
                             <span class="card-title">Lenguajes</span>
                         
                             <ul>
-                                <li>
-                                    <span>JavaScript</span>
-                                    <progress max="100" value="80"></progress>
-                                </li>
                                 <li>
                                     <span>HTML</span>
                                     <progress max="100" value="92"></progress>
@@ -176,12 +174,16 @@
                                     <progress max="100" value="88"></progress>
                                 </li>
                                 <li>
-                                    <span>Python</span>
-                                    <progress max="100" value="35"></progress>
+                                    <span>JavaScript</span>
+                                    <progress max="100" value="80"></progress>
                                 </li>
                                 <li>
                                     <span>PHP</span>
                                     <progress max="100" value="52"></progress>
+                                </li>
+                                <li>
+                                    <span>Python</span>
+                                    <progress max="100" value="35"></progress>
                                 </li>
                                 <li>
                                     <span>Java</span>
@@ -212,20 +214,17 @@
                         
                             <ul>
                                 <li>
+                                    <span>GIT y GitHub</span>
+                                    <progress max="100" value="75"></progress>
+                                </li>
+                                <li>
                                     <span>Node JS</span>
                                     <progress max="100" value="62"></progress>
                                 </li>
                                 <li>
-                                    <span>NPM</span>
-                                    <progress max="100" value="80"></progress>
-                                </li>
                                 <li>
                                     <span>WebPack</span>
                                     <progress max="100" value="63"></progress>
-                                </li>
-                                <li>
-                                    <span>GIT y GitHub</span>
-                                    <progress max="100" value="80"></progress>
                                 </li>
                             </ul>
                         
@@ -316,7 +315,7 @@
                     
                         <div>
                             <ul>
-                                <li><a href="#development-knowledge">Desarroyo web y app</a></li>
+                                <li><a href="#development-knowledge">Desarrollo web y app</a></li>
                                 <li><a href="#music-production-knowledge">Producción musical</a></li>
                                 <li><a href="#ofimatic-knowledge">Ofimática</a></li>
                                 <br>
@@ -353,7 +352,7 @@
                     <div id="mail">
 
                         <span>Correo electrónico:</span>
-                        <p><a href="mailto:pulido.valiente.jorge@gmail.com">pulido.valiente.jorge@gmail.com</a></p>
+                        <p><a href="mailto:work.jorge.pulido@gmail.com">work.jorge.pulido@gmail.com</a></p>
                    
                     </div>
     
@@ -373,7 +372,7 @@
     <style>
         @page{
             size: A4 portrait;
-            margin: 10mm;
+            /* margin: 0; */
         }
 
         /* Root variables */
@@ -617,6 +616,38 @@
             background: linear-gradient(145deg, #cacaca, #f0f0f0);
         }
 
+        progress[value] {
+            /* Reset the default appearance */
+            -webkit-appearance: none;
+            appearance: none;
+
+            width: 125px;
+            height: 6px;
+        }
+        progress[value]::-webkit-progress-bar {
+            background-color: #eee;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+            border-radius: 20px;
+        }
+        progress[value]::-webkit-progress-value {
+            background-image:
+        	    /* -webkit-linear-gradient(
+                    -45deg, 
+        	        transparent 33%, rgba(0, 0, 0, .1) 33%, 
+        	        rgba(0,0, 0, .1) 66%, transparent 66%
+                ), */
+        	    -webkit-linear-gradient(
+                    top, 
+        	        rgba(255, 255, 255, .25), 
+        	        rgba(0, 0, 0, .25)
+                ),
+        	   -webkit-linear-gradient(left, rgb(165, 25, 25), rgb(32, 220, 226));
+
+            border-radius: 20px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+            background-size: 35px 20px, 100% 100%, 100% 100%;
+        }
 
 
         /* Movile display styles */
@@ -661,6 +692,8 @@
                 transform: translate(0, 0);
                 top: 0;
                 left: 0;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
             }
             @media (max-width: 750px) {
                 .movile-profile{
@@ -679,11 +712,73 @@
                 display: none;
             }
             .new-page{
-                background-color: red;
                 page-break-before: always;
             }
             .noprint{
                 display: none;
+            }
+
+
+
+            #main-container{
+                background-color: var(--main-color);
+                min-height: 29.7cm;
+                
+            }
+            /* Text */
+            p, h1, h2, span, li{
+                font-size: 12px;
+            }
+            p > a, ul li{font-size: 10px;}
+            h1, h2{
+                font-size: 36px;
+            }
+            h2{
+                font-size: 22px;
+            }
+
+        
+            .card-title{
+                font-size: 16px;
+            }
+            .card > div > .date{
+                font-size: 10px;
+            }
+            #profile{
+                flex-basis: 5.5cm;
+                background-color: #3b3b3b;
+                min-width: 20px;
+            }
+            #profile p, #profile span, #profile li{
+                color: var(--main-color);
+            }
+            .profile-image{
+                max-height: 200px;
+            }
+            #profile hr{
+                margin: 5px 8px 20px 8px;
+                border: 1px solid var(--main-color);
+            }
+            #profile a{
+                color:#96d1ce;
+            }
+            .card{
+                box-shadow: none;
+                background-color: unset;
+                border: 1px dotted #727171;
+                margin: 2.5%;
+                padding: 1% 2% 2% 2%;
+            }
+            main{
+                flex-basis: 16cm;
+            }
+            #more-info .card{
+                margin: 5%;
+            }
+
+            #development-knowledge > div{
+                display: flex;
+                flex-direction: row;
             }
         }
         /* body::-webkit-scrollbar{width: 0;}p,h1,h2,span{text-shadow: none;}#main-container{border-radius:0;max-width:none;width: 21cm;height: 100%;overflow: hidden;transform: translate(0, 0);top: 0;left: 0;}@media (max-width: 750px) {.movile-profile{display: none;}#profile{white-space:normal;min-width:285px;flex-basis: 25%;}main{flex-basis: 75%;}}br{display: unset} */
